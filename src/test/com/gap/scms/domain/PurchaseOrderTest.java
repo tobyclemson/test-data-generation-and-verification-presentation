@@ -16,7 +16,9 @@ public class PurchaseOrderTest {
         Item largePants = new Item("Large Pants", 12);
         Set<Item> items = setWith(smallPants, largePants);
 
-        PurchaseOrder purchaseOrder = new PurchaseOrder(null, null, null, null, null, null, items, null);
+        PurchaseOrder purchaseOrder = new PurchaseOrder(
+                null, null, null, null, null,
+                null, items, new Comment("Some jibberish"));
 
         // When
         Integer totalQuantity = purchaseOrder.getTotalQuantity();
