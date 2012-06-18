@@ -1,6 +1,5 @@
 package com.gap.scms.domain;
 
-import java.math.BigDecimal;
 import java.util.Set;
 
 import static com.gap.scms.domain.Item.toQuantity;
@@ -8,24 +7,24 @@ import static org.javafunk.funk.Eagerly.sum;
 import static org.javafunk.funk.Lazily.map;
 
 public class PurchaseOrder {
-    private final Integer id;
-    private final String status;
-    private final String shippingMethod;
-    private final BigDecimal duty;
-    private final String garmentType;
-    private final String ticket;
+    private final Id id;
+    private final Status status;
+    private final ShippingMethod shippingMethod;
+    private final Duty duty;
+    private final GarmentType garmentType;
+    private final Ticket ticket;
     private final Set<Item> items;
-    private final String comment;
+    private final Comment comment;
 
     public PurchaseOrder(
-            Integer id,
-            String status,
-            String shippingMethod,
-            BigDecimal duty,
-            String garmentType,
-            String ticket,
+            Id id,
+            Status status,
+            ShippingMethod shippingMethod,
+            Duty duty,
+            GarmentType garmentType,
+            Ticket ticket,
             Set<Item> items,
-            String comment) {
+            Comment comment) {
         this.id = id;
         this.status = status;
         this.shippingMethod = shippingMethod;
