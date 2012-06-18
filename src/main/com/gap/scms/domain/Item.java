@@ -7,6 +7,10 @@ public class Item {
     @Getter private String name;
     @Getter private Integer quantity;
 
+    public static Item item(String name, Integer quantity) {
+        return new Item(name, quantity);
+    }
+
     public Item(String name, Integer quantity) {
         this.name = name;
         this.quantity = quantity;

@@ -1,4 +1,5 @@
 package com.gap.scms.domain;
 
-public class Status {
+public enum Status {
+    Draft
 }
