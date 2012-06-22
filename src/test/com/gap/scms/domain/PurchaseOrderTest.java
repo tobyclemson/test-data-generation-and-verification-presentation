@@ -2,15 +2,12 @@ package com.gap.scms.domain;
 
 import org.junit.Test;
 
-import java.util.Set;
-
 import static com.gap.scms.domain.Id.id;
 import static com.gap.scms.domain.Item.item;
 import static com.gap.scms.domain.PurchaseOrderBuilder.purchaseOrderBuilder;
 import static com.gap.scms.domain.Status.Draft;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.javafunk.funk.Literals.setWith;
 
 public class PurchaseOrderTest {
     @Test
